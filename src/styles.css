@@ -45,6 +45,12 @@ body {
   background: var(--paper);
   border: 1px solid var(--line);
   padding: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ticket:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .ticket__head {
@@ -79,6 +85,11 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.4s;
+}
+
+.ticket:hover .ticket__poster img {
+  transform: scale(1.05);
 }
 
 .ticket__body {
